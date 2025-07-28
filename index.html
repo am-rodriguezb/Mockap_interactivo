@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tranfic - Desglose Escolar</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR STICKY -->
+  <nav class="navbar-tranfic sticky-top">
+    <div class="logo">Tranfic</div>
+    <ul class="menu">
+      <li><a href="#inicio">INICIO</a></li>
+        <li><a href="#que-es">¿QUÉ ES TRANFIC?</a></li>
+        <li><a href="#informes">INFORMES</a></li>
+        <li><a href="#colegios-recientes">COLEGIOS</a></li>
+        <li><a href="#buscar">BUSCAR</a></li>
+        <li><a href="#opiniones">OPINIONES</a></li>
+        <li><a href="#contacto">CONTACTO</a></li>
+    </ul>
+    <a href="#" class="btn-acceso"><i class="bi bi-person-fill"></i> ACCESO USUARIOS</a>
+  </nav>
+
+  <!-- CARRUSEL DE APERTURA -->
+<section id="inicio" class="fade-in">
+  <div id="carruselTranfic" class="carousel slide carrusel-verde" data-bs-ride="carousel" data-bs-interval="5000">
+    
+    <!-- Indicadores -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carruselTranfic" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carruselTranfic" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carruselTranfic" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="carrusel-bg" style="background-image: url('assets/img/fondo1.jpg');">
+          <div class="carrusel-overlay">
+            <h2>Transparencia Escolar</h2>
+            <p>Consulta cómo se gestionan los recursos en tu colegio.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="carrusel-bg" style="background-image: url('assets/img/fondo2.jpg');">
+          <div class="carrusel-overlay">
+            <h2>Gastos Detallados</h2>
+            <p>Conoce cada inversión: luz, agua, internet, sueldos y más.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="carrusel-bg" style="background-image: url('assets/img/fondo3.jpg');">
+          <div class="carrusel-overlay">
+            <h2>Comparativa por Escuelas</h2>
+            <p>Compara gastos entre diferentes colegios municipales.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botones de navegación -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carruselTranfic" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bg-dark rounded-circle"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carruselTranfic" data-bs-slide="next">
+      <span class="carousel-control-next-icon bg-dark rounded-circle"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+
+  </div>
+</section>
+
+
+  <!-- INICIO ya es el carrusel -->
+
+<!-- ¿QUÉ ES TRAFFIC? -->
+<section id="que-es" class="py-5 bg-light fade-in">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="text-success mb-3"><i class="bi bi-info-circle-fill"></i> ¿Qué es Tranfic?</h2>
+      <p class="lead text-muted">
+        <strong>Tranfic</strong> es una plataforma de <span class="fw-bold text-success">transparencia educativa</span> que muestra cómo se distribuyen y utilizan los recursos públicos en los colegios municipales. Permite a ciudadanos, apoderados y funcionarios consultar informes claros, accesibles y actualizados.
+      </p>
+    </div>
+
+    <h4 class="text-center mb-4 text-success">¿Por qué elegir Tranfic?</h4>
+
+    <!-- Par 1: Visualización y Gráficos -->
+    <div class="row align-items-center mb-5">
+      <div class="col-lg-6">
+        <div class="text-center">
+          <i class="bi bi-lightning-charge text-success display-6"></i>
+          <h5 class="mt-2 fw-bold">Rápida Visualización</h5>
+          <p class="text-start">Consulta en segundos el estado financiero de cualquier colegio registrado. Información clara, ordenada y en tiempo real.</p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="text-center">
+          <i class="bi bi-bar-chart-fill text-success display-6"></i>
+          <h5 class="mt-2 fw-bold">Gráficos Dinámicos</h5>
+          <p class="text-start">Los datos se presentan en gráficos interactivos que facilitan la comprensión de gastos e ingresos escolares.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Par 2: Comparación y Acceso -->
+    <div class="row align-items-center mb-5">
+      <div class="col-lg-6">
+        <div class="text-center">
+          <i class="bi bi-building text-success display-6"></i>
+          <h5 class="mt-2 fw-bold">Comparación por Colegios</h5>
+          <p class="text-start">Analiza y compara presupuestos y gastos entre distintos colegios de la comuna o región.</p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="text-center">
+          <i class="bi bi-people-fill text-success display-6"></i>
+          <h5 class="mt-2 fw-bold">Acceso para Apoderados</h5>
+          <p class="text-start">Padres y tutores pueden consultar fácilmente los informes financieros del establecimiento de sus hijos.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Par 3: Informes y Exportación -->
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="text-center">
+          <i class="bi bi-file-earmark-text-fill text-success display-6"></i>
+          <h5 class="mt-2 fw-bold">Informes Detallados</h5>
+          <p class="text-start">Gastos por categoría: sueldos, servicios básicos, internet, infraestructura, materiales, etc.</p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="text-center">
+          <i class="bi bi-cloud-arrow-down-fill text-success display-6"></i>
+          <h5 class="mt-2 fw-bold">Exportación de Datos</h5>
+          <p class="text-start">Descarga los informes en PDF o Excel para su análisis offline o para presentar en reuniones.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- informes -->
+<section id="informes" class="py-5 bg-success fade-in">
+  <div class="container">
+    <!-- Primera sección: Gestión Escolar -->
+    <div class="row align-items-center mb-5">
+      <!-- Tarjeta blanca con texto deslizable -->
+      <div class="col-lg-6">
+        <div class="card-blanco" id="card-blanco">
+          <div class="texto-deslizable">
+            <h3 class="fw-bold mb-3">GESTIÓN ESCOLAR INTELIGENTE</h3>
+            <p class="mb-3">Tranfic transforma la manera en que se visualiza y gestiona la información financiera de los colegios municipales. Con datos en tiempo real y reportes detallados, facilitamos la toma de decisiones informadas.</p>
+            <a href="pages/sueldos.html" class="btn btn-success rounded-pill">VER DETALLES</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Texto lateral -->
+      <div class="col-lg-6">
+        <div class="texto-lateral" id="texto-lateral">
+          <h2 class="fw-bold text-white mb-3">Transparencia Total en Educación</h2>
+          <hr class="divider-verde">
+          <p class="text-white mb-4">Descubre cómo Tranfic revoluciona la gestión escolar con datos claros y accesibles sobre presupuestos, sueldos y gastos operacionales.</p>
+          <div class="stats-row-white" id="stats-row-white">
+            <div class="stat-item-white">
+              <span class="stat-number-white">95%</span>
+              <span class="stat-label-white">Transparencia</span>
+            </div>
+            <div class="stat-item-white">
+              <span class="stat-number-white">500+</span>
+              <span class="stat-label-white">Colegios</span>
+            </div>
+            <div class="stat-item-white">
+              <span class="stat-number-white">24/7</span>
+              <span class="stat-label-white">Acceso</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Segunda sección: Infraestructura Escolar -->
+    <div class="row align-items-center mb-5">
+      <!-- Texto lateral (ahora a la izquierda) -->
+      <div class="col-lg-6">
+        <div class="texto-lateral-izq" id="texto-infraestructura">
+          <h2 class="fw-bold text-white mb-3">Gestión de Instalaciones</h2>
+          <hr class="divider-verde">
+          <p class="text-white mb-4">Descubre cómo se invierten los recursos en infraestructura educativa. Desde salas de clases hasta laboratorios, cada espacio cuenta para la calidad educativa.</p>
+          <div class="stats-row-infra" id="stats-infra">
+            <div class="stat-item-infra">
+              <span class="stat-number-infra">85%</span>
+              <span class="stat-label-infra">Mantenimiento</span>
+            </div>
+            <div class="stat-item-infra">
+              <span class="stat-number-infra">120+</span>
+              <span class="stat-label-infra">Salas</span>
+            </div>
+            <div class="stat-item-infra">
+              <span class="stat-number-infra">15</span>
+              <span class="stat-label-infra">Laboratorios</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta blanca con texto deslizable (ahora a la derecha) -->
+      <div class="col-lg-6">
+        <div class="card-blanco" id="card-infraestructura">
+          <div class="texto-deslizable">
+            <h3 class="fw-bold mb-3">INFRAESTRUCTURA ESCOLAR</h3>
+            <p class="mb-3">Monitorea el estado de instalaciones, mantenimiento y mejoras en colegios municipales. Conoce inversiones en salas, patios, laboratorios y espacios deportivos.</p>
+            <a href="pages/infraestructura.html" class="btn btn-success rounded-pill">VER DETALLES</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tercera sección: Materiales y Recursos Didácticos -->
+    <div class="row align-items-center">
+      <!-- Tarjeta blanca con texto deslizable -->
+      <div class="col-lg-6">
+        <div class="card-blanco" id="card-materiales">
+          <div class="texto-deslizable">
+            <h3 class="fw-bold mb-3">MATERIALES Y RECURSOS DIDÁCTICOS</h3>
+            <p class="mb-3">Consulta el inventario de materiales educativos, libros, tecnología y recursos digitales disponibles en cada establecimiento municipal.</p>
+            <a href="pages/materiales.html" class="btn btn-success rounded-pill">VER DETALLES</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Texto lateral -->
+      <div class="col-lg-6">
+        <div class="texto-lateral" id="texto-materiales">
+          <h2 class="fw-bold text-white mb-3">Recursos Educativos</h2>
+          <hr class="divider-verde">
+          <p class="text-white mb-4">Explora cómo se distribuyen los materiales didácticos y recursos tecnológicos en los colegios. Desde libros de texto hasta equipos computacionales.</p>
+          <div class="stats-row-white" id="stats-materiales">
+            <div class="stat-item-white">
+              <span class="stat-number-white">2,500+</span>
+              <span class="stat-label-white">Libros</span>
+            </div>
+            <div class="stat-item-white">
+              <span class="stat-number-white">150</span>
+              <span class="stat-label-white">Computadores</span>
+            </div>
+            <div class="stat-item-white">
+              <span class="stat-number-white">100%</span>
+              <span class="stat-label-white">Cobertura</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COLEGIOS RECIENTES -->
+<section id="colegios-recientes" class="py-5 bg-light fade-in">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="text-success mb-4"><i class="bi bi-building"></i> Colegios Recientes</h2>
+      <p class="lead text-muted mb-4">Los últimos establecimientos agregados al programa de transparencia</p>
+      
+      <div class="colegios-grid">
+        <div class="grid-container">
+          <!-- Imagen grande destacada -->
+          <div class="grid-item featured-item">
+            <a href="pages/desglose.html" class="text-decoration-none">
+              <img src="assets/img/colegio_emi.jpg" alt="Colegio EMI" class="grid-img">
+              <div class="grid-overlay">
+                <h5 class="fw-bold text-white">Colegio EMI</h5>
+                <p class="small text-white-50">Santiago</p>
+              </div>
+            </a>
+          </div>
+          
+          <!-- Imagen grande (Decher) -->
+          <div class="grid-item large-small">
+            <a href="pages/desglose.html" class="text-decoration-none">
+              <img src="assets/img/colegio_decher.jpg" alt="Colegio Decher" class="grid-img">
+              <div class="grid-overlay">
+                <h6 class="fw-bold text-white">Colegio Decher</h6>
+                <p class="small text-white-50">Santiago</p>
+              </div>
+            </a>
+          </div>
+          
+          <!-- Imagen pequeña (Vitacura) -->
+          <div class="grid-item small-item">
+            <a href="pages/desglose.html" class="text-decoration-none">
+              <img src="assets/img/colegio_vitacura.jpg" alt="Colegio Vitacura" class="grid-img">
+              <div class="grid-overlay">
+                <h6 class="fw-bold text-white">Colegio Vitacura</h6>
+                <p class="small text-white-50">Vitacura</p>
+              </div>
+            </a>
+          </div>
+          
+          <!-- Imagen pequeña (Miramar) -->
+          <div class="grid-item small-item">
+            <a href="pages/desglose.html" class="text-decoration-none">
+              <img src="assets/img/colegio_miramar.jpg" alt="Colegio Miramar" class="grid-img">
+              <div class="grid-overlay">
+                <h6 class="fw-bold text-white">Colegio Miramar</h6>
+                <p class="small text-white-50">Viña del Mar</p>
+              </div>
+            </a>
+          </div>
+          
+          <!-- Imagen grande (Maipú) -->
+          <div class="grid-item large-small">
+            <a href="pages/desglose.html" class="text-decoration-none">
+              <img src="assets/img/colegio_maipu.jpeg" alt="Colegio Maipú" class="grid-img">
+              <div class="grid-overlay">
+                <h6 class="fw-bold text-white">Colegio Maipú</h6>
+                <p class="small text-white-50">Maipú</p>
+              </div>
+            </a>
+          </div>
+          
+          <!-- Imagen grande (Liceo de Hombres) -->
+          <div class="grid-item large-small">
+            <a href="pages/desglose.html" class="text-decoration-none">
+              <img src="assets/img/Liceo_hombres.jpg" alt="Liceo de Hombres" class="grid-img">
+              <div class="grid-overlay">
+                <h6 class="fw-bold text-white">Liceo de Hombres</h6>
+                <p class="small text-white-50">Santiago Centro</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BUSCAR COLEGIO -->
+<section id="buscar" class="py-5 bg-white fade-in">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="text-success mb-4"><i class="bi bi-search"></i> Buscar Colegio</h2>
+      <p class="lead text-muted mb-4">Encuentra información detallada sobre cualquier colegio municipal</p>
+      
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="input-group">
+            <input type="text" id="input-buscar" class="form-control" placeholder="Buscar colegio..." list="lista-colegios">
+            <button class="btn btn-success" id="btn-buscar" type="button">
+              <i class="bi bi-search"></i> Buscar
+            </button>
+          </div>
+          <datalist id="lista-colegios">
+            <option value="Escuela Los Aromos - Linares">
+            <option value="Colegio Mapu - Santiago">
+            <option value="Liceo San Pedro - Valparaíso">
+            <option value="Escuela El Roble - Concepción">
+            <option value="Colegio San Francisco - La Serena">
+            <option value="Liceo Industrial - Antofagasta">
+            <option value="Escuela República de México - Santiago">
+            <option value="Colegio San Agustín - Viña del Mar">
+            <option value="Liceo Bicentenario - Temuco">
+            <option value="Escuela Básica Municipal - Iquique">
+          </datalist>
+        </div>
+      </div>
+      <div id="resultado-busqueda" class="mt-3"></div>
+    </div>
+  </div>
+</section>
+
+<!-- opiniones -->
+<section id="opiniones" class="opiniones-clientes py-5 text-white fade-in">
+  <div class="container text-center">
+    <h2 class="mb-4"><i class="bi bi-chat-dots-fill"></i> ¿Qué opinan nuestros usuarios?</h2>
+    <p class="mb-5">Conoce lo que directores y apoderados dicen sobre el uso de <strong>Tranfic</strong> en sus escuelas.</p>
+
+    <div id="carouselOpiniones" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="opinion p-4">
+            <img src="https://ui-avatars.com/api/?name=María+Torres&background=0d6e3e&color=fff&rounded=true&size=80" 
+                 class="rounded-circle mb-3" width="80" alt="María Torres">
+            <h5 class="fw-bold mb-1">María Torres</h5>
+            <p class="small mb-1">Directora, Escuela Municipal de Linares</p>
+            <p class="fst-italic">"Gracias a Tranfic, ahora puedo mostrar de forma clara y confiable cómo usamos los recursos. ¡Transparencia real!"</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="opinion p-4">
+            <img src="https://ui-avatars.com/api/?name=Carlos+Rojas&background=0d6e3e&color=fff&rounded=true&size=80" 
+                 class="rounded-circle mb-3" width="80" alt="Carlos Rojas">
+            <h5 class="fw-bold mb-1">Carlos Rojas</h5>
+            <p class="small mb-1">Encargado de Finanzas, Colegio Mapu</p>
+            <p class="fst-italic">"Los informes gráficos de Tranfic me ayudaron a presentar los gastos mensuales al consejo escolar con claridad total."</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="opinion p-4">
+            <img src="https://ui-avatars.com/api/?name=Paula+Núñez&background=0d6e3e&color=fff&rounded=true&size=80" 
+                 class="rounded-circle mb-3" width="80" alt="Paula Núñez">
+            <h5 class="fw-bold mb-1">Paula Núñez</h5>
+            <p class="small mb-1">Apoderada, Escuela Los Aromos</p>
+            <p class="fst-italic">"Me encanta saber en qué se invierten los recursos del colegio de mi hijo. ¡Así debe funcionar la educación pública!"</p>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselOpiniones" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselOpiniones" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO (footer) -->
+<footer id="contacto" class="footer-tranfic-detallado py-5">
+  <div class="container d-flex flex-column flex-md-row justify-content-between text-white gap-4">
+    
+    <!-- Columna 1 -->
+    <div>
+      <h4 class="fw-bold">Tranfic</h4>
+      <p class="small mb-2">Plataforma de Transparencia Escolar Municipal</p>
+      <p class="mb-1">Dirección de Transparencia Educativa</p>
+      <p class="mb-1">Ministerio de Educación – Gobierno de Chile</p>
+      <p class="mb-1">Av. Libertador 1234, Santiago de Chile</p>
+      <a href="#" class="text-success text-decoration-none">Términos y Condiciones</a>
+    </div>
+
+    <!-- Columna 2 -->
+    <div>
+      <h6 class="fw-bold">Centro de Ayuda</h6>
+      <p class="mb-1"><i class="bi bi-telephone-fill"></i> 600 123 456</p>
+      <p class="mb-1"><i class="bi bi-phone-fill"></i> +56 9 8765 4321</p>
+      <p><i class="bi bi-geo-alt-fill"></i> <a href="#" class="text-success text-decoration-none">Ir al centro de ayuda</a></p>
+    </div>
+
+    <!-- Columna 3 -->
+    <div>
+      <h6 class="fw-bold mb-2">Síguenos en</h6>
+      <div class="d-flex gap-3">
+        <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white fs-5"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="text-white fs-5"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="text-white fs-5"><i class="bi bi-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
